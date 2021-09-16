@@ -6,7 +6,7 @@ const express = require('express');
 const router = express.Router();
 const auth = require("./verifyToken");
 // const path = require('path');
-require("dotenv").config();
+// require("dotenv").config();
 
 
 // REGISTER
