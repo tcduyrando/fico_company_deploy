@@ -7,7 +7,8 @@ const { MONGO_URI } = process.env;
 exports.connect = () => {
   // Connecting to the database
   mongoose
-    .connect('mongodb+srv://admin_giaminhphamle:025861223@cluster0.psjpd.mongodb.net/COSC2769?retryWrites=true&w=majority', )
+    // for some reason, MONGO_URI is not recognized as a String when deployed with Heroku
+    .connect('mongodb+srv://admin_giaminhphamle:025861223@cluster0.psjpd.mongodb.net/COSC2769?retryWrites=true&w=majority', ) 
     .then(() => {
       console.log("Successfully connected to database");
     })

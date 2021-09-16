@@ -1,4 +1,5 @@
 const jwt = require("jsonwebtoken");
+require("dotenv").config({ path: 'ENV_FILENAME'});
 
 const config = process.env;
 
