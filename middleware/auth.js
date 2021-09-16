@@ -7,6 +7,7 @@ const router = express.Router();
 const auth = require("./verifyToken");
 
 
+
 // REGISTER
 router.post('/register', async (req, res) => {
   // Validate the data
