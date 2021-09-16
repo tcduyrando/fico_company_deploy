@@ -35,8 +35,7 @@ useEffect(() => {
   return(
     <>
     <><PageTitle
-            title={data.title}
-            subTitle="Cooking #25102589748" /><section className="section pt-4 pb-4 osahan-account-page">
+            title={data.title}/><section className="section pt-4 pb-4 osahan-account-page">
                 <Container>
                     <Row>
                         <Col md={9}>
