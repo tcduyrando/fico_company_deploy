@@ -12,7 +12,7 @@ const verifyToken = (req, res, next) => {
     return res.status(403).send("A token is required for authentication");
   }
   try {
-    const verified  = jwt.verify(token, config.TOKEN_KEY);
+    const verified  = jwt.verify(token, "somethingrandom");
     req.user = verified;
   } catch (err) {
     return res.status(401).send("Invalid Token");
