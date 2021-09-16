@@ -5,8 +5,6 @@ const { registerValidation, loginValidation } = require('../validation')
 const express = require('express');
 const router = express.Router();
 const auth = require("./verifyToken");
-// const path = require('path');
-// require("dotenv").config();
 
 
 // REGISTER
