@@ -1,11 +1,13 @@
 const mongoose = require("mongoose");
+require("dotenv").config({ path: 'ENV_FILENAME'});
+
 
 const { MONGO_URI } = process.env;
 
 exports.connect = () => {
   // Connecting to the database
   mongoose
-    .connect(String(MONGO_URI), )
+    .connect(MONGO_URI, )
     .then(() => {
       console.log("Successfully connected to database");
     })
