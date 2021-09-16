@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 
-require("dotenv").config();
+require("dotenv").config({ path: 'ENV_FILENAME'});
 require("./config/database").connect();
 
 const express = require('express');
