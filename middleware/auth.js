@@ -5,7 +5,7 @@ const { registerValidation, loginValidation } = require('../validation')
 const express = require('express');
 const router = express.Router();
 const auth = require("./verifyToken");
-require("dotenv").config({ path: 'ENV_FILENAME'});
+require("dotenv").config({ path: path.resolve(__dirname, '../.env') });
 
 
 // REGISTER

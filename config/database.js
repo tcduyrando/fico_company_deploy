@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-require("dotenv").config({ path: 'ENV_FILENAME'});
+require("dotenv").config({ path: path.resolve(__dirname, '../.env') });
 
 
 const { MONGO_URI } = process.env;
@@ -8,7 +8,7 @@ exports.connect = () => {
   // Connecting to the database
   mongoose
     // for some reason, MONGO_URI is not recognized as a String when deployed with Heroku
-    .connect('mongodb+srv://admin_giaminhphamle:025861223@cluster0.psjpd.mongodb.net/COSC2769?retryWrites=true&w=majority', ) 
+    .connect(MONGO_URI, ) 
     .then(() => {
       console.log("Successfully connected to database");
     })
