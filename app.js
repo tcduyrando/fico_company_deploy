@@ -1,5 +1,7 @@
 /* eslint-disable no-undef */
 
+const path = require('path');
+
 require("dotenv").config({ path: path.resolve(__dirname, './.env') });
 require("./config/database").connect();
 
@@ -10,7 +12,7 @@ const jwt = require("jsonwebtoken");
 const bodyParser = require('body-parser')
 const cors = require('cors');
 const expressSession = require('express-session');
-const path = require('path');
+
 
 app.use(express.json());
 
