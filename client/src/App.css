@@ -1,0 +1,1455 @@
+
+/* -- Body
+-- NavBar
+-- login/Register
+-- Homepage
+-- AdminPage
+-- Customize Bootstrap
+-- Listing
+-- Detail
+-- My Profile
+-- AboutUs
+-- Footer
+ */
+
+ /* BODY */
+ body {
+  background: #f3f7f8;
+  font-size: 13px;
+  font-weight: 500;
+}
+button, a {
+  outline: none !important;
+  color: #0044ff;
+  text-decoration: none !important;
+}
+p {
+  font-size: 13px;
+  color: #7a7e8a;
+}
+.banner{
+  background-size: cover;
+  height: 440px;
+  width: 1100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.banner-bg{
+  background-image: url(https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/2019/10/Promote-charity-event.png);
+}
+img{
+  image-rendering: auto;
+}
+.logoimg{
+  image-rendering: auto;
+  height: 68px; 
+}
+.logoname{
+  color: rgb(109, 68, 7);
+  font-size: 19px;
+  font-family: sans-serif;
+}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+  color: #000000;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ /* NavBar */
+ .logoimg{
+  image-rendering: auto;
+  height: 68px; 
+}
+.osahan-nav {
+  background: rgb(255, 255, 255) none repeat scroll 0 0 !important;
+  padding: 0;
+  z-index: 9;
+}
+.osahan-nav .nav-link {
+  font-weight: 600;
+  padding: 28px 0px !important;
+  margin: 0 0 0 31px;
+}
+.nav-osahan-pic {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 3px #ccc;
+  position: relative;
+  margin: -8px 5px -6px 0;
+  vertical-align: text-top;
+}
+
+.thanks {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* LOGIN/REGISTER */
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+.login,
+.image {
+  min-height: 100vh;
+}
+.bg-image {
+  background-image: url('https://philanthropyu.org/wp-content/uploads/2020/05/Philanthropy-U-Building-the-perfect-fundraising-plan.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-pagetitle{
+  background-image: url(https://keighleycollege.ac.uk/wp-content/uploads/2020/09/KC_0011-Apprenticeship-Web-Banner-Background-1300x600-V3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.login-heading {
+  font-weight: 300;
+}
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+}
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.form-label-group>input,
+.form-label-group>label {
+  padding: 15px 0;
+  border-radius: 0px;
+  height: 51px;
+  background: transparent !important;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  box-shadow: none !important;
+}
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  cursor: text;
+  /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+.form-label-group input::placeholder {
+  color: transparent;
+}
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+}
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+/* Homepage Search Block */
+.homepage-search-block {
+  background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
+  background-size: cover;
+
+}
+.homepage-search-form .form-control {
+  font-size: 15px;
+  height: 50px;
+  padding-right: 106px;
+}
+.homepage-search-form .form-group {
+  position: relative;
+}
+.homepage-search-form .locate-me {
+  background: #ececec none repeat scroll 0 0;
+  color: #666;
+  font-size: 12px;
+  padding: 7px 10px;
+  border-radius: 3px;
+  position: absolute;
+  right: 14px;
+  top: 9px;
+}
+.homepage-search-form .locate-me:hover {
+  background: #666 none repeat scroll 0 0;
+  color: #ffffff;
+}
+.homepage-search-form .btn {
+  font-size: 15px;
+  font-weight: 600;
+  height: 50px;
+  padding: 13px 5px;
+}
+.homepage-search-form .location-dropdown i {
+  left: 18px;
+  position: absolute;
+  top: 20px;
+  z-index: 9;
+}
+.homepage-search-form .select2-selection {
+  border-color: #ced4da !important;
+  border-radius: 0.25rem !important;
+  height: 50px !important;
+  outline: none !important;
+}
+.homepage-search-form .select2-selection__rendered {
+  font-size: 15px;
+  line-height: 47px !important;
+  padding: 0 28px 0 31px !important;
+}
+.homepage-search-form .select2-selection__arrow {
+  right: 9px !important;
+  top: 13px !important;
+}
+.select2-dropdown{
+  margin: -2px 0 0 0;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field{
+ border: 1px solid #ced4da;
+}
+.select2-search__field{
+  outline: none !important;
+  border: 1px solid #ced4da;
+}
+.owl-carousel {
+  position: relative;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  position: absolute;
+  bottom: calc(50% - 20px);
+  background: #fff none repeat scroll 0 0 !important;
+  border-radius: 30px !important;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #000 !important;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 !important;
+  text-align: center;
+  text-transform: uppercase;
+  width: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.owl-theme .owl-nav [class*="owl-"] i {
+  font-size: 13px !important;
+  font-weight:normal !important;
+}
+.owl-theme .owl-nav .owl-prev {
+  margin-left: -16px !important;
+}
+.owl-theme .owl-nav .owl-next {
+  right:0px;
+  margin-right: -16px !important;
+}
+/* Homepage */
+.owl-carousel-four .item {
+  padding: 6px 7px;
+}
+.osahan-category-item {
+  background: #fff;
+  margin: 5px 2px;
+  border-radius: 3px;
+  overflow: hidden;
+  text-align: center;
+  padding: 7px;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  border: 1px solid rgb(255, 255, 255);
+}
+.osahan-category-item:hover {
+  border: 1px solid #ff3008;
+}
+.osahan-category-item h6 {
+  margin: 0px;
+  font-size: 13px;
+  color: #ff3008;
+}
+.osahan-category-item p {
+  margin: 0px;
+  font-size: 12px;
+}
+.osahan-category-item img {
+  width: 40px !important;
+  height: 40px;
+  object-fit: cover;
+  display: inline-block !important;
+  border-radius: 50px;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  margin: 2px 0 8px 0;
+}
+.line {
+  background-color: #5e5e5e;
+  border-radius: 12px;
+  display: inline-table;
+  height: 4px;
+  margin: 0 0 51px;
+  width: 50px;
+}
+/* Customize Bootstrap */
+.small, small {
+  font-size: 85%;
+  font-weight: 600;
+}
+.select2, .select2 span {
+  width: 100% !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  left: 96%;
+}
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+}
+.modal-footer .btn {
+  font-size: 14px;
+  padding: 12px 16px;
+}
+.btn-success,
+.badge-success {
+  background-color: #3ecf8e !important;
+  border-color: #3ecf8e !important;
+}
+.btn-outline-success {
+  color: #3ecf8e !important;
+  border-color: #3ecf8e !important;
+}
+.btn-outline-success:hover {
+  color: #ffffff !important;
+  border-color: #3ecf8e !important;
+  background-color: #3ecf8e !important;
+}
+.text-success {
+  color: #3ecf8e !important;
+}
+.border-success {
+  border-color: #3ecf8e!important;
+}
+.btn-danger,
+.badge-danger {
+  background-color: #0044ff !important;
+  border-color: #0044ff !important;
+}
+.btn-outline-danger {
+  color: #0044ff !important;
+  border-color: #0044ff !important;
+}
+.btn-outline-danger:hover {
+  color: #ffffff !important;
+  border-color: #0044ff !important;
+  background-color: #0044ff !important;
+}
+.text-danger {
+  color: #0044ff !important;
+}
+.border-danger {
+  border-color: #0044ff!important;
+}
+.badge-danger {
+  background-color: #0044ff !important;
+  border-color: #0044ff !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+  color: #ffffff !important;
+  border-color: #0044ff !important;
+  background-color: #0044ff !important;
+}
+.text-primary {
+  color: #0044ff !important;
+}
+.border-primary {
+  border-color: #0044ff!important;
+}
+.btn-lg {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 14px 35px;
+  letter-spacing: 1px;
+}
+.modal-content {
+  border: none;
+  border-radius: 2px;
+}
+.btn {
+  border-radius: 2px;
+}
+.form-control {
+  font-size: 13px;
+  border-radius: 2px;
+  min-height: 38px;
+}
+.card {
+  border-radius: 2px;
+}
+.rounded {
+  border-radius: 2px !important;
+}
+.input-group-text {
+  border-radius: 2px;
+}
+.custom-checkbox .custom-control-label::before {
+  border-radius: 2px;
+}
+.nav-pills .nav-link {
+  border-radius: 2px;
+}
+.alert,
+.badge,
+.dropdown-menu {
+  border-radius: 2px;
+}
+.input-group-sm>.custom-select,
+.input-group-sm>.form-control,
+.input-group-sm>.input-group-append>.btn,
+.input-group-sm>.input-group-append>.input-group-text,
+.input-group-sm>.input-group-prepend>.btn,
+.input-group-sm>.input-group-prepend>.input-group-text {
+  border-radius: 2px;
+}
+.bg-dark {
+  background-color: #000 !important;
+}
+.pb-5,
+.py-5 {
+  padding-bottom: 4rem !important;
+}
+.pt-5,
+.py-5 {
+  padding-top: 4rem !important;
+}
+.dropdown-menu {
+  font-size: 13px;
+}
+.dropdown-item {
+  border-radius: 0 !important;
+  padding: 7px 18px;
+  color: rgba(0,0,0,.5);
+  font-weight: 500;
+}
+.dropdown-item:focus {
+  background-color: #ff3008;
+  color: #fff;
+}
+/* AdminPage */
+.order-list .btn {
+  border-radius: 2px;
+  min-width: 121px;
+  font-size: 13px;
+  padding: 7px 0 7px 0;
+}
+.osahan-account-page-left .nav-link {
+  padding: 18px 20px;
+  border: none;
+  font-weight: 600;
+  color: #535665;
+}
+.osahan-account-page-left .nav-link i {
+  width: 28px;
+  height: 28px;
+  background: #535665;
+  display: inline-block;
+  text-align: center;
+  line-height: 29px;
+  font-size: 15px;
+  border-radius: 50px;
+  margin: 0 7px 0 0px;
+  color: #fff;
+}
+.osahan-account-page-left .nav-link.active {
+  background: #f3f7f8;
+  color: #282c3f !important;
+}
+.osahan-account-page-left .nav-link.active i {
+  background: #282c3f !important;
+}
+.osahan-user-media img {
+  width: 90px;
+}
+.card offer-card h5.card-title {
+  border: 2px dotted #000;
+}
+.card.offer-card h5 {
+  border: 1px dotted #daceb7;
+  display: inline-table;
+  color: #17a2b8;
+  margin: 0 0 19px 0;
+  font-size: 15px;
+  padding: 6px 10px 6px 6px;
+  border-radius: 2px;
+  background: #fffae6;
+  position: relative;
+}
+.card.offer-card h5 img {
+  height: 22px;
+  object-fit: cover;
+  width: 22px;
+  margin: 0 8px 0 0;
+  border-radius: 2px;
+}
+.card.offer-card h5:after {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #daceb7;
+  content: "";
+  left: 30px;
+  position: absolute;
+  bottom: 0;
+}
+.card.offer-card h5:before {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #daceb7;
+  content: "";
+  left: 30px;
+  position: absolute;
+  top: 0;
+}
+.card.offer-card .card-btn {
+  font-size:13px;
+  color:#0044ff;
+  vertical-align: top !important;
+  border:0px !important;
+}
+.card.offer-card .card-btn:hover {
+  color:#0044ff;
+}
+.payments-item .media {
+  align-items: center;
+}
+.payments-item .media img {
+  margin: 0 40px 0 11px !important;
+}
+.reviews-members .media .mr-3 {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
+.order-list img.mr-4 {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+  border-radius: 2px;
+}
+.osahan-cart-item p.text-gray.float-right {
+  margin: 3px 0 0 0;
+  font-size: 12px;
+}
+.osahan-cart-item .food-item {
+  vertical-align: bottom;
+}
+/* //======= */
+
+
+
+.banner_css{
+  position: absolute;
+  width: 100%;
+  height: 262px;
+  left: 0px;
+  top: 59px;
+  
+  background: #F5F5F5;
+  }
+  
+  .h1_css{
+      /* FLYAWAY: EMERGENCY AFGHAN RESCUE MISSION */
+  
+  position: absolute;
+  width: 1293px;
+  height: 72px;
+  top: 100px;
+  
+  
+  
+  
+  }
+  
+
+
+  .poster_img{
+    position: absolute;
+    left: 4%;
+    right: 36.73%;
+    top: 45%;
+    bottom: 52.87%;
+    
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    width: 700px;
+    height: 450px;
+    }
+
+
+    #UserNameAvatar{
+      position: absolute;
+      left: 10.63%;
+      
+      top: 107.0%;
+      bottom: -0.76%;
+      
+  }
+  
+  .userName{
+      position: relative;
+     left: 15%;
+     top: 7px;
+     
+      
+      
+      }
+      
+  .userAvatar{
+      position: absolute;
+      left: -55.63%;
+      
+      top: 1.0%;
+      bottom: -0.76%;
+      border-radius: 70%;
+      width: 40px;
+      height: 35px;
+  }
+
+
+
+  #UserInformation{
+    
+    position: absolute;
+    left: 3.63%;
+    top: 112.0%;
+    bottom: -0.76%;
+    width: 700px;
+    border-top: 3px solid  #C4C4C4;
+    ;
+    
+    
+}
+
+
+
+.userinfo_content{
+    position: absolute;
+    left: 4.63%;
+}
+
+
+
+#content_cmt{
+  position: absolute;
+  left: 3.63%;
+  top: 160.0%;
+  bottom: -0.76%;
+  width: 700px;
+
+}
+
+
+
+
+
+.avatar_user{
+  position: absolute;
+  left: 10%;
+  border-radius: 70%;
+  width: 40px;
+  height: 35px;
+}
+
+.username_css{
+  position:absolute;
+  left: 18%;
+}
+
+
+.date_css{
+  position: absolute;
+  font-size: x-small;
+  color: gray;
+  left: 18%;
+  margin-top: 3%;
+}
+
+.cmt_css{
+  position: absolute;
+  font-size: small;
+  left: 17%;
+  margin-top: 7%;
+  border-bottom: 2px solid gray;
+  color:gray;
+
+}
+
+.btn_css:hover,
+		.btn:focus {
+			box-shadow: inset 0 0 0 2em var(--hover);
+		}
+    .btn_css {
+			--color: #0044ff;
+			--hover: #0044ff;}
+
+.btn_css {
+
+ 
+  margin-right: 1%;
+
+  background-color: white;
+  font-weight: bolder ;
+  margin-right: 1%;
+  border-radius: 12px;
+  border-color: #0044ff;
+  margin-bottom: 1%;
+  height:30px;
+  font-size: 6pt;
+  width:50px;
+  margin-bottom: 1%;
+  height:30px;
+  width:50px;
+  
+  
+}
+
+
+
+
+.btn_edit{
+  
+  position: relative;
+  left:-40%;
+  margin-bottom: 2%;
+  
+}
+
+ /* DONATE */
+#donate{
+  /* position: absolute; */
+  left: 66.19%;
+  right: 4.11%;
+  top: 45%;
+  bottom: 100%;
+  
+  background: #FFFFFF;
+  
+  box-sizing: border-box;
+  }
+  
+  .donate_content {
+      border: 2px solid gray;
+      height: 600px;
+      
+  }
+  
+  .p_edit{
+      
+      font-weight: bolder;
+      position: relative;
+      border-bottom: solid 7px#2F4FA1;
+   
+  
+  }
+  
+  
+  
+  
+  .donate_btn{
+  position: absolute;
+  left: 40.92%;
+  bottom: -100px;
+  border-radius: 3px;
+  
+  }
+
+ /* ABOUT US */
+  #aboutUs{
+    position: relative;
+    top: 50px;
+
+  }
+  #aboutUs h1{
+    font-family: 'Kaushan Script', handwriting;
+    font-size: 3rem;
+    
+  }
+  .content_aboutus{
+    width: 700px;
+    margin:0 auto;
+
+  }
+.img_team{
+  position: relative;
+  top: 50px;
+}
+  .team_avatar{
+    
+    border-radius: 360px;
+    margin-right: 30px;
+    width: 170px;
+    height: 170px;
+    border-color: black;
+  }
+#aboutUs  h2{
+  font-family: 'Kaushan Script', handwriting;
+    font-size: 3rem;
+    text-align: center;
+}
+.container_team {
+  margin: 20px 40px;
+  color: rgb(255, 255, 255);
+}
+.profile_team {
+  display: flex;
+  margin: 30px 10px;
+  padding-bottom: 20px;
+}
+.profile_member {
+  flex-basis: 260px;
+}
+.profile_member .profile-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  
+  cursor: pointer;
+  transition: 400ms;
+}
+.profile_member:hover .profile-img {
+  filter: grayscale(0);
+}
+.user-name {
+  text-align: auto;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.profile_member h5 {
+  font-size: 18px;
+  font-weight: bolder;
+  color: gray;
+}
+@media only screen and (max-width: 1150px) {
+  .profile_team {
+    flex-direction: column;
+  }
+  .profile_member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 900px) {
+  
+  .profile_team {
+    margin: 20px 0;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+.contact-info{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+
+.icon_css{
+  position: relative;
+  margin-right: 150px ;
+  text-align: center;
+  
+  left:50px;
+
+  
+}
+
+
+.contact_btn  {
+border:none;
+background-color: #f3f7f8;
+
+}
+
+.contact_btn p{
+  color: gray;
+  font-weight: bolder;
+  position:relative;
+  left:-20px;
+  top: 15px;
+}
+
+
+
+
+.icon_css:hover {
+  color: red;
+}
+
+/* Footer */
+.footer {
+  background: rgb(#ececec);
+}
+.footer h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+.footer ul li {
+  line-height: 26px;
+  list-style: outside none none;
+}
+.footer ul li a {
+  color: #6c8293;
+}
+.search-links a {
+  color: #666;
+  font-size: 12px;
+  line-height: 23px;
+  margin: 0 2px;
+}
+.search-links {
+  font-size: 11px;
+}
+footer {
+  background-color: #ebebeb;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .m-none{
+      display: none;
+  }
+  .homepage-search-title {
+      text-align: center;
+  }
+  .list-cate-page {
+      margin: 22px 0 0 0;
+  }
+  .d-none-m{
+    display:none;
+  }
+  .description{
+      white-space: nowrap;
+      text-transform: lowercase;
+      text-indent: 50px;
+  
+  }
+  .row.pt-2.pb-2 {
+      padding-bottom: 0px !important;
+      padding-top: 0px !important;
+  }
+  .row.pt-2 {
+      padding-top: 0px !important;
+  }
+  .offer-card-horizontal .col-md-4.col-4.p-4 {
+      padding: 0 0 0 15px !important;
+  }
+  .row.mt-4.pt-2 {
+      margin-top: 0px !important;
+      padding-top: 0px !important;
+  }
+  .homepage-add-section {
+      padding: 0 13px;
+  }
+  .breadcrumb-osahan h1 {
+      font-size: 34px;
+  }
+  .breadcrumb-osahan h6 {
+      font-size: 15px;
+  }
+  .breadcrumb-osahan {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  .reviews-members .media .mr-3 {
+      width: 36px;
+      height: 36px;
+  }
+  .total-like {
+      font-size: 12px;
+  }
+  .restaurant-detailed-action-btn.float-right .btn {
+      margin: 3px 0px;
+      font-size: 13px;
+  }
+  .login  .col-md-9.col-lg-8.mx-auto.pl-5.pr-5 {
+      padding: 0 11px !important;
+  }
+  .login.d-flex.align-items-center.py-5 {
+      padding: 0 !important;
+  }
+  .h5, h5 {
+      font-size: 16px;
+  }
+  .homepage-add-section .col-md-3.col-6 {
+      padding: 2px 2px;
+  }
+  .homepage-ad .item {
+      padding: 0 2px;
+  }
+  .osahan-nav {
+      padding: 15px 15px;
+  }
+  .navbar-toggler {
+      padding: 5px 8px;
+      border-radius: 2px;
+  }
+  .osahan-nav .nav-link {
+      margin: 0px;
+      text-align: center;
+      padding: 14px 0 !important;
+      border-bottom: 1px solid #eef0ef;
+  }
+  .osahan-nav .dropdown-item {
+      text-align: center;
+  }
+  .osahan-slider {
+      padding: 18px 0 0 0px !important;
+  }
+  .pt-5, .py-5 {
+      padding-top: 3rem !important;
+  }
+  .pb-5, .py-5 {
+      padding-bottom: 3rem !important;
+  }
+  .homepage-search-block {
+      padding: 3rem 0 !important;
+  }
+  .mobile-none{
+      display: none;
+  }
+  .card {
+      margin-bottom: 15px !important;
+  }
+  p{
+      font-size: 12px;
+  }
+  .restaurant-detailed-header-left img {
+      float: none !important;
+      margin: 0 0 14px 0 !important;
+  }
+  .restaurant-detailed-header-left {
+      text-align: center;
+  }
+  .restaurant-detailed-header-right .btn-success {
+      margin-top: 18px;
+  }
+  .restaurant-detailed-header-right.text-right {
+      text-align: center !important;
+  }
+  .restaurant-detailed-action-btn.float-right {
+      float: none !important;
+      margin: auto;
+      text-align: center;
+      width: 100% !important;
+      display: block;
+      padding: 12px 0;
+      border-bottom: 1px solid #dedede;
+  }
+  .offer-dedicated-nav {
+      text-align: center;
+  }
+  .offer-dedicated-nav .nav-item {
+      flex: auto;
+      border-bottom: 1px solid #ccc;
+      padding: 0;
+      margin: 0 11px !important;
+  }
+  .offer-dedicated-nav {
+      text-align: center;
+  }
+  .address-map.float-right.ml-5 {
+      float: none !important;
+      margin: 0 0 20px 0 !important;
+  }
+  .address-map.float-right.ml-5 iframe {
+      width: 100%;
+  }
+  .osahan-track-order-detail p.text-gray.mb-5 {
+      margin: 1px 0 11px 0 !important;
+  }
+  .osahan-account-page-left .nav-tabs {
+      padding-left: 0px !important;
+  }
+  .osahan-account-page-left {
+      height: auto !important;
+      margin: 0 0 15px 0;
+  }
+  .order-list .float-right {
+      float: none !important;
+  }
+  .row.mb-4 {
+      margin-bottom: 0px !important;
+  }
+  .app {
+      margin-bottom: 26px;
+  }
+  .footer ul li a {
+      font-size: 12px;
+  }
+  .footer h6 {
+      font-size: 13px;
+      text-transform: capitalize;
+  }
+  .osahan-payment .col-sm-4.pr-0 {
+      padding-right: 15px !important;
+  }
+  .osahan-payment .col-sm-8.pl-0 {
+      padding-left: 15px !important;
+      margin: 14px 0 0 0;
+  }
+  .p-5.osahan-invoice.bg-white.shadow-sm {
+      padding: 15px !important;
+  }
+  .h3, h3 {
+      font-size: 22px;
+  }
+  .p-5 {
+      padding: 20px !important;
+  }
+  .osahan-account-page-right {
+      padding: 0px !important;
+      border: none;
+      background: transparent !important;
+      box-shadow: none !important;
+      margin-top: 15px;
+  }
+  }
+  /* Small devices (landscape phones, 576px and up) */
+   @media (min-width: 576px) and (max-width: 767.98px) {
+  .homepage-add-section .col-md-3.col-6 {
+      padding: 2px 2px;
+  }
+  .homepage-search-title {
+      text-align: center;
+  }
+  .row.pt-2.pb-2 {
+      padding-bottom: 0px !important;
+      padding-top: 0px !important;
+  }
+  .row.pt-2 {
+      padding-top: 0px !important;
+  }
+  .d-none-m{
+    display:none;
+  }
+  .list-cate-page {
+      margin: 22px 0 0 0;
+  }
+  .row.mt-4.pt-2 {
+      margin-top: 0px !important;
+      padding-top: 0px !important;
+  }
+  .offer-card-horizontal .col-md-4.col-4.p-4 {
+      padding: 0 0 0 15px !important;
+  }
+  .homepage-add-section {
+      padding: 0 13px;
+  }
+  .homepage-ad .item {
+      padding: 0 2px;
+  }
+  .container {
+      max-width: 100%;
+  }
+  .osahan-nav {
+      padding: 15px 15px;
+  }
+  .navbar-toggler {
+      padding: 5px 8px;
+      border-radius: 2px;
+  }
+  .osahan-nav .nav-link {
+      margin: 0px;
+      text-align: center;
+      padding: 14px 0 !important;
+      border-bottom: 1px solid #eef0ef;
+  }
+  .osahan-nav .dropdown-item {
+      text-align: center;
+  }
+  .osahan-slider {
+      padding: 18px 0 0 0px !important;
+  }
+  .pt-5, .py-5 {
+      padding-top: 3rem !important;
+  }
+  .pb-5, .py-5 {
+      padding-bottom: 3rem !important;
+  }
+  .homepage-search-block {
+      padding: 3rem 0 !important;
+  }
+  .mobile-none{
+      display: none;
+  }
+  .card {
+      margin-bottom: 15px !important;
+  }
+  p{
+      font-size: 12px;
+  }
+  .restaurant-detailed-header-left img {
+      float: none !important;
+      margin: 0 0 14px 0 !important;
+  }
+  .restaurant-detailed-header-left {
+      text-align: center;
+  }
+  .restaurant-detailed-header-right .btn-success {
+      margin-top: 18px;
+  }
+  .restaurant-detailed-header-right.text-right {
+      text-align: center !important;
+  }
+  .restaurant-detailed-action-btn.float-right {
+      float: none !important;
+      margin: auto;
+      text-align: center;
+      width: 100% !important;
+      display: block;
+      padding: 12px 0;
+      border-bottom: 1px solid #dedede;
+  }
+  .offer-dedicated-nav {
+      text-align: center;
+  }
+  .offer-dedicated-nav .nav-item {
+      flex: auto;
+      border-bottom: 1px solid #ccc;
+      padding: 0;
+      margin: 0 11px !important;
+  }
+  .offer-dedicated-nav {
+      text-align: center;
+  }
+  .address-map.float-right.ml-5 {
+      float: none !important;
+      margin: 0 0 20px 0 !important;
+  }
+  .address-map.float-right.ml-5 iframe {
+      width: 100%;
+  }
+  .osahan-payment .nav-link i {
+      display: block;
+      margin: 0 auto 10px auto;
+  }
+  .osahan-payment .nav-link {
+      text-align: center;
+  }
+  .osahan-track-order-detail p.text-gray.mb-5 {
+      margin: 1px 0 11px 0 !important;
+  }
+  .osahan-account-page-left .nav-tabs {
+      padding-left: 0px !important;
+  }
+  .osahan-account-page-left {height: auto !important;margin: 0 0 15px 0;}
+  .order-list .float-right {
+      float: none !important;
+  }
+  .row.mb-4 {
+      margin-bottom: 0px !important;
+  }
+  .app {
+      margin-bottom: 26px;
+  }
+  .footer ul li a {
+      font-size: 12px;
+  }
+  .footer h6 {
+      font-size: 13px;
+      text-transform: capitalize;
+  }
+  }
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+      max-width: 100%;
+  }
+  .osahan-nav {
+      padding: 15px 15px;
+  }
+  .navbar-toggler {
+      padding: 5px 8px;
+      border-radius: 2px;
+  }
+  .osahan-nav .nav-link {
+      margin: 0px;
+      text-align: center;
+      padding: 14px 0 !important;
+      border-bottom: 1px solid #eef0ef;
+  }
+  .osahan-nav .dropdown-item {
+      text-align: center;
+  }
+  .osahan-slider {
+      padding: 18px 0 0 0px !important;
+  }
+  .pt-5, .py-5 {
+      padding-top: 3rem !important;
+  }
+  .pb-5, .py-5 {
+      padding-bottom: 3rem !important;
+  }
+  .homepage-search-block {
+      padding: 3rem 0 !important;
+  }
+  .card {
+      margin-bottom: 15px !important;
+  }
+  p{
+      font-size: 12px;
+  }
+  .restaurant-detailed-header-left img {
+      float: none !important;
+      margin: 0 0 14px 0 !important;
+  }
+  .restaurant-detailed-header-left {
+      text-align: center;
+  }
+  .restaurant-detailed-header-right .btn-success {
+      margin-top: 18px;
+  }
+  .restaurant-detailed-header-right.text-right {
+      text-align: center !important;
+  }
+  .restaurant-detailed-action-btn.float-right {
+      float: none !important;
+      margin: auto;
+      text-align: center;
+      width: 100% !important;
+      display: block;
+      padding: 12px 0;
+      border-bottom: 1px solid #fffaf1;
+  }
+  .offer-dedicated-nav {
+      text-align: center;
+  }
+  .offer-dedicated-nav .nav-item {
+      margin: 0 8px !important;
+  }
+  .offer-dedicated-nav {
+      text-align: center;
+  }
+  .address-map.float-right.ml-5 {
+      float: none !important;
+      margin: 0 0 20px 0 !important;
+  }
+  .address-map.float-right.ml-5 iframe {
+      width: 100%;
+  }
+  .osahan-payment .nav-link i {
+      display: block;
+      margin: 0 auto 10px auto;
+  }
+  .osahan-payment .nav-link {
+      text-align: center;
+  }
+  .osahan-track-order-detail p.text-gray.mb-5 {
+      margin: 1px 0 11px 0 !important;
+  }
+  .osahan-account-page-left .nav-tabs {
+      padding-left: 0px !important;
+  }
+  .osahan-account-page-left {
+      height: auto !important;
+      margin: 0 0 15px 0;
+  }
+  .order-list .float-right {
+      float: none !important;
+  }
+  .row.mb-4 {
+      margin-bottom: 0px !important;
+  }
+  .app {
+      margin-bottom: 26px;
+  }
+  .footer ul li a {
+      font-size: 12px;
+  }
+  .footer h6 {
+      font-size: 13px;
+      text-transform: capitalize;
+  }
+  }
+  /* Large devices (desktops, 992px and up) */
+   @media (min-width: 992px) and (max-width: 1199.98px) {
+       .container {
+           max-width: 100%;
+      }
+  }
+  /* Extra large devices (large desktops, 1200px and up) */
+   @media (min-width: 1200px) {
+  }
+  
+  .grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 356px 356px 356px; /*Make the grid smaller than the container*/
+  grid-gap: 50px;
+  padding: 10px;
+    
+  }
+  .grid-list{
+    display: inline-grid;
+    grid-row-gap: 30px;
+    padding: 10px;
+    grid-template-columns: 1200px;
+
+  }
+
+  

@@ -1,0 +1,186 @@
+nav {
+    flex: 2;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.logo {
+    margin: auto;
+    margin-left: 5px;
+    height: 60px;
+    width: auto;
+}
+
+.nav_container {
+    width: 100%;
+    height: 60px;
+    display: inline-flex;
+}
+
+.nav_menu {
+    padding-left: 100px;
+    width: 400px;
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+}
+
+.nav_links {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #18A0FB;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.login_btn,
+.register_btn {
+    display: flex;
+    padding: 5px;
+    justify-content: flex-end;
+}
+
+.register_btn {
+    margin-right: 50px;
+}
+
+.login_btn a,
+.register_btn a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: transparent;
+}
+
+.login_btn a {
+    color: #18A0FB;
+}
+
+.register_btn a,
+.join_btn a {
+    color: white;
+}
+
+.login_btn button,
+.register_btn button,
+.join_btn button,
+.contact_btn button {
+    height: 40px;
+    width: 130px;
+    transition: .3s;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #18A0FB;
+    border-style: solid;
+}
+
+.login_btn button,
+.contact_btn button {
+    background: white;
+    color: #18A0FB;
+}
+
+.register_btn button {
+    background: #18A0FB;
+    color: white;
+}
+
+.join_btn button {
+    background: #18A0FB;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.join_btn {
+    margin-top: 300px;
+    vertical-align: middle;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+}
+
+.contact_btn {
+    vertical-align: middle;
+    float: right;
+    margin: auto;
+    text-align: center;
+}
+
+.middle_content {
+    display: inline-flex;
+    margin-top: 80px;
+    justify-content: space-evenly;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.middle_item {
+    width: 25%;
+}
+
+.static_header {
+    height: 700px;
+    display: flex;
+    background: #18A0FB;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: url('../../asset/image/highest.png');
+    width: 100%;
+}
+
+.header_text {
+    font-size: 56px;
+    font-family: Montserrat;
+    font-style: bold;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.03em;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.jumbotron {
+    background-color: whitesmoke !important;
+    margin-left: 90px;
+    font-family: Montserrat;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-right: 90px;
+}
+
+.social_menu {
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 0 0 10px;
+}
+
+.social_menu img {
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}

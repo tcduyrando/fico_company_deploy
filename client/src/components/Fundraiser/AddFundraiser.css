@@ -1,0 +1,129 @@
+.body {
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.input-section {
+    width: 100%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.input-section input{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+
+.input-section label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.input-section label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.input-section input:focus + .label-name .content-name, 
+.input-section input:valid + .label-name .content-name{
+    transform: translateY(-100%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+
+.input-section input:focus + .label-name::after, 
+.input-section input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+
+.textarea-section {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.textarea-section label {
+    position: absolute;
+    bottom: 86%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black
+  
+}
+
+.textarea-section label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.textarea-section textarea{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 60px;
+    border: none;
+    outline: none;
+    overflow: auto;
+    
+}
+
+.textarea-section textarea:focus + .label-name .content-name, 
+.textarea-section textarea:valid + .label-name .content-name{
+    transform: translateZ(0%);
+    font-size: 20px;
+    color: #5fa8d3;
+}
+
+.textarea-section textarea:focus + .label-name::after, 
+.textarea-section textarea:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+.col-40 {
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+
+}
+
+.col-60 {
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+  }
+
