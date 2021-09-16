@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
 import './user.css';
 
 const UserApprove = props => {
@@ -25,9 +26,9 @@ const UserApprove = props => {
               {p.isAdmin &&
               <td> Administrator</td>}
                {!p.isAdmin &&
-              <td><button onClick={props.onApprove.bind(this, p._id)} onChange={p=> p.isAdmin}>Approve</button></td>}
+              <td><Button variant="warning" onClick={props.onApprove.bind(this, p._id)} onChange={p=> p.isAdmin}>Approve</Button></td>}
               {p.isAdmin &&
-              <td><button onClick={props.onApprove.bind(this, p._id)} onChange={p=> p.isAdmin}>Reject</button></td>}
+              <td><Button variant="dark" onClick={props.onApprove.bind(this, p._id)} onChange={p=> p.isAdmin}>Reject</Button></td>}
             </tr>
           ))}
         </tbody>

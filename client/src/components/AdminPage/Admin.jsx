@@ -46,7 +46,7 @@ export default class Admin extends React.Component {
   }
    logout(event){
 		event.preventDefault();
-        window.sessionStorage.setItem("isAuthenticated", false);
+        window.sessionStorage.setItem("isAuthenticated", 'false');
         this.setState({isAuthenticated: window.sessionStorage.getItem('authenticated')})
         window.sessionStorage.removeItem("token");
         window.sessionStorage.removeItem("id");

@@ -8,7 +8,43 @@ import { FaSearch } from 'react-icons/fa';
 const Search = React.memo(props => {
   const {onloadedProjects} = props;
   const [filter, setFilter] = useState('');
- 
+  const url = "/api/fundraiser";
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          console.log(filter)
+          const loadedIngredients = [];
+          for (const key in data) {
+            loadedIngredients.push({
+              id: key,
+              _id: data[key]._id,
+              title: data[key].title,
+              image: data[key].image,
+              name: data[key].name,
+              fundType: data[key].fundType,
+              donate: data[key].donate,
+              donaterequire: data[key].donaterequire,
+              percent: data[key].percent
+            });
+          }
+
+        onloadedProjects(loadedIngredients.filter((val) => 
+        val.name.toLowerCase().includes(filter.toLowerCase()) ||
+        val.fundType.toLowerCase().includes(filter.toLowerCase()) ||   
+        val.title.toLowerCase().includes(filter.toLowerCase())));
+        });
+        }, 500);
+
+    return () => {
+        clearTimeout(timer);
+    };
+
+  }, [filter, onloadedProjects]);
+
   return (
     <> 
     <br></br>

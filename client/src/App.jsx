@@ -27,16 +27,14 @@ export default class App extends React.Component {
 
   componentDidMount(){
     if (window.sessionStorage.getItem("isAuthenticated") === null) {
-      window.sessionStorage.setItem('isAuthenticated', false)
+      window.sessionStorage.setItem('isAuthenticated', 'false')
     }
     this.setState({isAuthenticated: window.sessionStorage.getItem('isAuthenticated')})
   }
   render(){
     
   return (
-    <div>
-      
-  
+    <div> 
       {
             (this.props.location.pathname!=='/login' && this.props.location.pathname!=='/register' && this.props.location.pathname!=='/admin/projects' && 
             this.props.location.pathname!=='/admin/addfundraiser' && this.props.location.pathname!=='/admin/userslist' && this.props.location.pathname!=='/admin/approveadmin')    ? <Navbar/>:''
@@ -55,8 +53,9 @@ export default class App extends React.Component {
                 <Route path="/projectform" component={ProjectForm} />
                 <Route path="/userp" component={UserProfile}/>
               </Switch>
-          <Footer />
-      
+          {
+            (this.props.location.pathname!=='/login' && this.props.location.pathname!=='/register' && this.props.location.pathname!=='/admin/projects')    ? <Footer/>:''
+          } 
     </div>
   );
   }

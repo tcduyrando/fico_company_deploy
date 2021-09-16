@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
 import './user.css';
 
 const User = props => {
@@ -25,7 +26,7 @@ const User = props => {
               {p.isAdmin &&
               <td> Administrator</td>}
                
-              <td><button onClick={props.onRemoveUser.bind(this, p._id)}>Delete</button></td>
+              <td><Button variant="outline-dark" onClick={props.onRemoveUser.bind(this, p._id)}>Delete</Button></td>
             </tr>
           ))}
         </tbody>

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import StarRating from './StarRating';
 import Icofont from 'react-icofont';
 
-// const url ="http://localhost:4001/api/users";
+// const url ="/api/users";
 class Review extends Component {
   state = {
     user: [],

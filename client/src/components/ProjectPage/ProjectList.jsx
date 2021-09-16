@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {Button} from 'react-bootstrap';
 import './ProjectList.css';
 
 const ProjectList = props => {
@@ -27,10 +28,10 @@ const ProjectList = props => {
               
               <td>
               <Link to={/admin/ + /updateFundraiser/ + p._id} key={p._id} >
-                <button onClick={props.onUpdate.bind(this, p._id)}>Update</button>
+                <Button variant="primary" onClick={props.onUpdate.bind(this, p._id)}>Update</Button>
               </Link>
               </td>
-              <td><button onClick={props.onRemoveProject.bind(this, p._id)}>Delete</button></td>
+              <td><Button variant="outline-dark" onClick={props.onRemoveProject.bind(this, p._id)}>Delete</Button></td>
             </tr>
           ))}
         </tbody>

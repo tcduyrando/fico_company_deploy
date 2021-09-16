@@ -2,7 +2,7 @@ import React from 'react';
 import {Form,Modal,Button} from 'react-bootstrap';
 import axios from 'axios';
 
-// const url = "http://localhost:4001/api/user/" 
+// const url = "/api/user/" 
 class EditProfileModal extends React.Component {
     constructor(props){
 		super(props);

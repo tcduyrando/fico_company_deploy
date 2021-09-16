@@ -1,6 +1,3 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable eqeqeq */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {Row,Col,Container,Form,Button} from 'react-bootstrap';
@@ -33,7 +30,7 @@ login(event){
    .then(data=>{
        if(data.auth === true && data.isAdmin === true){
            alert('Login admin successfully')
-           window.sessionStorage.setItem('isAuthenticated', true)
+           window.sessionStorage.setItem('isAuthenticated', 'true')
            window.sessionStorage.setItem('token', data.token)
            window.sessionStorage.setItem('id', data.id)
            this.props.history.push('/admin/projects')
@@ -41,7 +38,7 @@ login(event){
        }
        else if(data.auth === true && data.isAdmin === false){
          alert('Login successfully')
-         window.sessionStorage.setItem('isAuthenticated', true)
+         window.sessionStorage.setItem('isAuthenticated', 'true')
          window.sessionStorage.setItem('token', data.token)
          window.sessionStorage.setItem('id', data.id)
          this.props.history.push('/')
@@ -49,7 +46,7 @@ login(event){
      }
        else{
            alert('Wrong username or password')
-           window.sessionStorage.setItem('isAuthenticated', false)
+           window.sessionStorage.setItem('isAuthenticated', 'false')
            window.location.reload()
        }
    })

@@ -6,7 +6,7 @@ import {Navbar,Nav,Container,Image} from 'react-bootstrap';
 import Icofont from 'react-icofont';
 
 
-// const url = "https://localhost:4001/api/user" 
+// const url = "/api/user" 
 
 export default class NavBar extends React.Component {
 	constructor(props) {
@@ -23,7 +23,7 @@ export default class NavBar extends React.Component {
 	}
 	logout(event){
 		event.preventDefault();
-        window.sessionStorage.setItem("isAuthenticated", false);
+        window.sessionStorage.setItem("isAuthenticated", 'false');
         this.setState({isAuthenticated: window.sessionStorage.getItem('authenticated')})
         window.sessionStorage.removeItem("token");
 		window.sessionStorage.removeItem("id");
